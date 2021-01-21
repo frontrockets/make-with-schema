@@ -100,9 +100,9 @@ describe('with pointing to other path', () => {
 describe('with computed values', () => {
   it('returns all necessary fields with values according to passed paths', () => {
     const schema = {
-      first: full => `computed: ${full.first}`,
+      first: (full) => `computed: ${full.first}`,
       normal: {
-        second: full => `computed: ${full.normal.second}`,
+        second: (full) => `computed: ${full.normal.second}`,
       },
     }
 
@@ -122,9 +122,9 @@ describe('with computed values', () => {
 
   it('returns null if computed value applies to an empty object', () => {
     const schema = {
-      first: full => `computed: ${full.first}`,
+      first: (full) => `computed: ${full.first}`,
       normal: {
-        second: full => `computed: ${full.normal.second}`,
+        second: (full) => `computed: ${full.normal.second}`,
       },
     }
 
@@ -152,7 +152,7 @@ describe('with computed values', () => {
 
     it('returns null if computed value fails', () => {
       const schema = {
-        something: full => full.nothing.nothing,
+        something: (full) => full.nothing.nothing,
       }
       const withSchema = makeWithSchema(schema)
 

@@ -1,9 +1,9 @@
 import _ from 'lodash'
 
-const makeWithSchema = schema => (entity, master = entity) => {
+const makeWithSchema = (schema) => (entity, master = entity) => {
   const result = {}
 
-  Object.keys(schema).forEach(schemaKey => {
+  Object.keys(schema).forEach((schemaKey) => {
     const ref = schema[schemaKey]
 
     if (_.isPlainObject(ref)) {

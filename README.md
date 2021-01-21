@@ -59,7 +59,7 @@ import makeWithSchema from "@frontrockets/make-with-schema"
     b: null,
     c: {
       first: null,
-      second: null,  
+      second: null,
     },
     'd.e': null,
   }
