@@ -1,4 +1,4 @@
-import _ from 'lodash'
+const _ = require('lodash')
 
 const makeWithSchema = (schema) => (entity, master = entity) => {
   const result = {}
@@ -28,4 +28,4 @@ const makeWithSchema = (schema) => (entity, master = entity) => {
   return result
 }
 
-export default makeWithSchema
+module.exports = makeWithSchema
