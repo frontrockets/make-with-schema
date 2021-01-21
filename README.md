@@ -3,7 +3,7 @@ _This is part of @datarockets infrastructure_
 ## Install
 
 ```
-npm install @frontrockets/make-with-schema
+npm install frontrockets/make-with-schema
 ```
 
 ## Usage
