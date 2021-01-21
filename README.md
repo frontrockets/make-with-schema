@@ -52,7 +52,6 @@ import makeWithSchema from "@frontrockets/make-with-schema"
   }
 
 
-
 # It supports nesting
   const schema = {
     a: null,
@@ -87,8 +86,6 @@ import makeWithSchema from "@frontrockets/make-with-schema"
   }
 
 # We can easily change the name of property to more  correct
-
-# It supports nesting
   const schema = {
     c: 'awful_Variable_Name'
   }
