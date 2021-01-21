@@ -1,0 +1,25 @@
+{
+  "name": "@frontrockets/make-with-schema",
+  "version": "0.0.1",
+  "description": "Tool which helps to normalize data according to provided schema",
+  "main": "./src/index.js",
+  "scripts": {
+    "lint": "prettier --check '*.js'",
+    "test": "jest"
+  },
+  "repository": "git@github.com:frontrockets/make-with-schema.git",
+  "author": "Andrew Kuzmichev",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
